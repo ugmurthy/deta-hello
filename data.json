@@ -1,0 +1,21 @@
+{
+    "name": "Hello World"
+    "description": "Simple Hello World API using FastAPI"
+    "runtime": "python3.",
+    "env": [
+        {
+            "key": "DB_SECRET"
+            "description": "Db Secret key"
+            "value": "SOME SECRET VALUE"
+            "required": true
+        },
+        {
+            "key": "API_SECRET"
+            "description": "x-api-key"
+            "value": "API SECRET KEY VALUE "
+            "required": true
+        },
+
+    ],
+}
+
