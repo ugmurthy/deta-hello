@@ -6,4 +6,6 @@ There are 3 endpoints
 2. `/hello` returns `hello world` as a json object
 3. `/env` returns the environment variables set in `deta.json` as a json object
 
+
+To deploy it to a [deta micro](https://deta.sh) push 
 [![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/ugmurthy/deta-hello)
