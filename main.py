@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 import os
 
 env1 = os.getenv("DB_SECRET")
@@ -7,8 +8,23 @@ env2 = os.getenv("API_SECRET")
 
 app=FastAPI()
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def get_root():
+	return """
+	<html>
+    	<head>
+        	<title>Hello World</title>
+        	<p>
+            This is a simple API implemented on FastAPI to demonstrate deploy from a public GitHub repository
+            the API is hosted on a <a href="https://deta.sh/">deta micro</a>
+        	</p>
+        	<p> API documentation is available <a href="https://hello.deta.dev/docs">here</a></p>
+    	</head>
+	</html>
+
+	"""
+@app.get("/hello")
+def say_hello():
 	return {"Hello":"World"}
 
 @app.get("/items/")
