@@ -1,4 +1,9 @@
 from fastapi import FastAPI
+import os
+
+env1 = os.getenv("DB_SECRET")
+env2 = os.getenv("API_SECRET")
+
 
 app=FastAPI()
 
@@ -19,3 +24,9 @@ def get_items():
 
 	]
 
+@app.get("/env/")
+def get_env():
+	return {"API_SECRET": env2, "DB_SECRET": env1}
+
+
+	
