@@ -14,11 +14,14 @@ def get_root():
 	<html>
     	<head>
         	<title>Hello World</title>
+        	<h2>Hello World</h2>
+        	<hr>
+
         	<p>
             This is a simple API implemented on FastAPI to demonstrate deploy from a public GitHub repository
             the API is hosted on a <a href="https://deta.sh/">deta micro</a>
         	</p>
-        	<p> API documentation is available <a href="https://hello.deta.dev/docs">here</a></p>
+        	<p> API documentation is available <a href="/docs">here</a></p>
     	</head>
 	</html>
 
