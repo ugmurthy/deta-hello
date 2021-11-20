@@ -48,7 +48,7 @@ def get_env():
 	details = {}
 	details.update({"deta_env_vars": {"API_SECRET": env2, "DB_SECRET": env1} })
 	details.update({"osname":os.name})
-	details.update({"os_uname":os.uname})
+	details.update({"os_uname":os.uname()})
 	details.update({"homedir":os.environ['HOME']})
 	return details
 
