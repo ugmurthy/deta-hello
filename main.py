@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 import os
 from markdown import markdown as md 
 import csv 
-from deta import Deta, Drive
+from deta import Deta
 
 with open("index.html","r") as f:
 	html = f.read()
