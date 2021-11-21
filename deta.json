@@ -7,12 +7,18 @@
             "key": "DB_SECRET",
             "description": "Db Secret key",
             "value": "SOME SECRET VALUE",
-            "required": true
+            "required": false
         },
         {
             "key": "API_SECRET",
             "description": "x-api-key",
             "value": "API SECRET KEY VALUE ",
+            "required": false
+        },
+        {
+            "key": "DB_PROJECT_ID",
+            "description": "Deta Project ID",
+            "value": "Deta Project ID",
             "required": true
         }
 
