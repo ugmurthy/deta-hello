@@ -5,7 +5,7 @@ import os
 env1 = os.getenv("DB_SECRET")
 env2 = os.getenv("API_SECRET")
 cwd = os.getcwd()
-home = os.envrion
+home = os.environ 
 
 print(cwd)
 print(home)
