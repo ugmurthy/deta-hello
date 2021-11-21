@@ -4,7 +4,11 @@ import os
 
 env1 = os.getenv("DB_SECRET")
 env2 = os.getenv("API_SECRET")
+cwd = os.getcwd()
+home = os.envrion
 
+print(cwd)
+print(home)
 
 app=FastAPI()
 
@@ -49,7 +53,9 @@ def get_env():
 	details.update({"deta_env_vars": {"API_SECRET": env2, "DB_SECRET": env1} })
 	details.update({"osname":os.name})
 	#details.update({"os_uname":os.uname()})
-	details.update({"homedir":os.environ['HOME']})
+	#details.update({"homedir":os.environ['HOME']})
+	details.update({"cwd":os.getcwd()})
+	
 	return details
 
 
